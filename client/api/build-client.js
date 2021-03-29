@@ -3,7 +3,7 @@ import axios from 'axios';
 const buldClient = ({ req }) => {
     if(typeof window === 'undefined'){
         return axios.create({
-            baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+            baseURL: 'https://157.230.201.202/',
             headers: req.headers
         });
     }else{
